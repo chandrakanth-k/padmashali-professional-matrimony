@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padmashali Professional Matrimony | Trusted Matrimonial Services</title>
+  <meta name="description" content="Padmashali Professional Matrimony — professional matrimonial matchmaking for individuals and families in Hyderabad." />
+  <style>
+    :root{
+      --maroon:#7d2433; --deep:#421a23; --gold:#c99a45; --cream:#fff9f1;
+      --rose:#f7e8e5; --ink:#292225; --muted:#71686b; --white:#fff;
+      --shadow:0 18px 50px rgba(66,26,35,.12);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,249,241,.94);backdrop-filter:blur(12px);border-bottom:1px solid #eadbd2}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--deep);letter-spacing:.2px}
+    .brand-mark{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--maroon);color:#fff;font-size:21px;box-shadow:0 8px 22px rgba(125,36,51,.2)}
+    nav{display:flex;gap:24px;color:#55484c;font-size:14px;font-weight:600}
+    nav a:hover{color:var(--maroon)}
+    .nav-btn,.hero-btn{background:var(--maroon);color:white;padding:12px 19px;border-radius:999px;font-weight:700;border:0;cursor:pointer}
+    .hero{padding:88px 0 78px;background:radial-gradient(circle at 80% 20%,#f5dfd8 0 15%,transparent 38%),linear-gradient(135deg,#fff9f1,#f9ece7)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}
+    .eyebrow{color:var(--maroon);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:12px;margin-bottom:15px}
+    h1{font-family:Georgia,serif;color:var(--deep);font-size:clamp(42px,6vw,68px);line-height:1.04;margin-bottom:22px}
+    .hero p{font-size:18px;color:var(--muted);max-width:610px;margin-bottom:28px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .secondary{padding:12px 19px;border:1px solid #d7bdb7;border-radius:999px;font-weight:700;color:var(--deep);background:#fff8}
+    .hero-card{background:#fff;border-radius:28px;padding:28px;box-shadow:var(--shadow);border:1px solid #f0dfd7}
+    .couple{height:310px;border-radius:20px;background:linear-gradient(145deg,#ead0c7,#fff1e7);display:grid;place-items:center;font-size:86px;color:var(--maroon)}
+    .card-note{padding-top:20px;display:flex;justify-content:space-between;gap:15px}
+    .card-note strong{color:var(--deep)}
+    .badge{font-size:12px;color:var(--maroon);background:var(--rose);padding:7px 10px;border-radius:999px;white-space:nowrap;font-weight:700}
+    section{padding:82px 0}
+    .section-head{text-align:center;max-width:700px;margin:0 auto 45px}
+    .section-head h2{font:700 42px/1.1 Georgia,serif;color:var(--deep);margin-bottom:13px}
+    .section-head p{color:var(--muted)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .feature{background:white;padding:30px;border-radius:22px;border:1px solid #f0e2dc;box-shadow:0 10px 30px rgba(66,26,35,.05)}
+    .icon{width:48px;height:48px;border-radius:14px;background:var(--rose);display:grid;place-items:center;color:var(--maroon);font-size:23px;margin-bottom:17px}
+    .feature h3{margin-bottom:8px;color:var(--deep)}
+    .feature p{color:var(--muted);font-size:15px}
+    .process{background:#fff}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .step{padding:25px;border:1px solid #eadbd2;border-radius:20px;background:var(--cream)}
+    .num{font-weight:900;color:var(--gold);font-size:28px}
+    .step h3{margin:10px 0 7px;color:var(--deep)}
+    .step p{font-size:14px;color:var(--muted)}
+    .profiles{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .profile{background:#fff;border:1px solid #eee0da;border-radius:22px;overflow:hidden;box-shadow:0 8px 24px rgba(66,26,35,.05)}
+    .profile-photo{height:210px;display:grid;place-items:center;font-size:64px;background:linear-gradient(145deg,#f3ddd7,#fff4e9);color:var(--maroon)}
+    .profile-body{padding:20px}
+    .profile-body h3{color:var(--deep)}
+    .profile-body p{font-size:14px;color:var(--muted);margin:6px 0 13px}
+    .tags{display:flex;gap:7px;flex-wrap:wrap}
+    .tag{font-size:12px;background:#f7f0eb;color:#67565a;padding:5px 9px;border-radius:999px}
+    .cta{padding:75px 0;background:var(--deep);color:#fff}
+    .cta-box{display:flex;justify-content:space-between;align-items:center;gap:30px}
+    .cta h2{font:700 40px/1.15 Georgia,serif;margin-bottom:10px}
+    .cta p{color:#ead9d6;max-width:620px}
+    .cta .hero-btn{background:#fff;color:var(--maroon)}
+    .contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:start}
+    .contact-info{padding:30px;background:var(--rose);border-radius:24px}
+    .contact-info h3{font:700 30px Georgia,serif;color:var(--deep);margin-bottom:10px}
+    .contact-info p{color:var(--muted);margin-bottom:18px}
+    .info-row{padding:13px 0;border-top:1px solid #e7cfc8;color:#4e4044}
+    form{background:#fff;padding:30px;border-radius:24px;border:1px solid #eadbd2;box-shadow:var(--shadow)}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+    label{display:block;font-size:13px;font-weight:700;color:#5c4c50;margin-bottom:6px}
+    input,select,textarea{width:100%;border:1px solid #dfcfca;border-radius:12px;padding:12px 13px;background:#fffaf7;font:inherit;outline:none}
+    input:focus,select:focus,textarea:focus{border-color:var(--maroon);box-shadow:0 0 0 3px rgba(125,36,51,.08)}
+    textarea{min-height:110px;resize:vertical}
+    .full{grid-column:1/-1}
+    .submit{margin-top:15px;width:100%;padding:13px;border:0;border-radius:12px;background:var(--maroon);color:#fff;font-weight:800;cursor:pointer}
+    .form-message{display:none;margin-top:12px;color:#286342;background:#edf8f0;padding:10px;border-radius:10px;font-size:14px}
+    footer{background:#2d171d;color:#d9c6c3;padding:28px 0}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:13px}
+    @media(max-width:850px){
+      nav{display:none}.hero-grid,.contact{grid-template-columns:1fr}.features,.profiles{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}
+      .hero{padding-top:55px}.couple{height:240px}.cta-box{flex-direction:column;align-items:flex-start}
+    }
+    @media(max-width:560px){
+      .features,.profiles,.steps,.form-grid{grid-template-columns:1fr}.section-head h2{font-size:34px}.hero h1{font-size:45px}.nav-btn{padding:10px 14px;font-size:13px}
+      .footer-inner{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home"><span class="brand-mark">♥</span><span>Padmashali Professional Matrimony</span></a>
+    <nav>
+      <a href="#about">About</a><a href="#process">How It Works</a><a href="#profiles">Profiles</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-btn" href="#contact">Register Profile</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Trusted matrimonial services</div>
+      <h1>Helping two families begin one beautiful journey.</h1>
+      <p>Professional matrimonial matchmaking for Padmashali individuals and families looking for meaningful, compatible relationships built on trust, values and mutual respect.</p>
+      <div class="hero-actions">
+        <a class="hero-btn" href="#contact">Find a Match</a>
+        <a class="secondary" href="#process">See How It Works</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="couple">♡</div>
+      <div class="card-note"><div><strong>Personalised matchmaking</strong><br><span style="color:#766a6e;font-size:13px">Confidential • Family-friendly • Relationship-focused</span></div><span class="badge">Professional Matrimony</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Why choose us</div>
+      <h2>A more personal way to find your life partner</h2>
+      <p>We combine a human approach with a simple, respectful process so that every introduction is handled thoughtfully.</p>
+    </div>
+    <div class="features">
+      <article class="feature"><div class="icon">♡</div><h3>Personal Attention</h3><p>We understand your preferences, values and expectations before suggesting introductions.</p></article>
+      <article class="feature"><div class="icon">✓</div><h3>Privacy First</h3><p>Your profile details are shared thoughtfully and only as appropriate for the matchmaking process.</p></article>
+      <article class="feature"><div class="icon">✦</div><h3>Meaningful Matches</h3><p>We focus on compatibility, family values, lifestyle and long-term expectations—not just photographs.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Simple process</div>
+      <h2>From profile to introduction</h2>
+      <p>A clear four-step journey for you and your family.</p>
+    </div>
+    <div class="steps">
+      <article class="step"><div class="num">01</div><h3>Register</h3><p>Tell us about yourself, your preferences and what you are looking for.</p></article>
+      <article class="step"><div class="num">02</div><h3>Consult</h3><p>We speak with you or your family to understand expectations and compatibility factors.</p></article>
+      <article class="step"><div class="num">03</div><h3>Shortlist</h3><p>We identify suitable profiles based on the information available to us.</p></article>
+      <article class="step"><div class="num">04</div><h3>Connect</h3><p>With mutual interest, we facilitate the next conversation or family introduction.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="profiles">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Sample profiles</div>
+      <h2>People looking for a meaningful connection</h2>
+      <p>These are illustrative profiles for the website design. Replace them with your real, consented listings.</p>
+    </div>
+    <div class="profiles">
+      <article class="profile"><div class="profile-photo">◉</div><div class="profile-body"><h3>Profile A</h3><p>Professional • Hyderabad</p><div class="tags"><span class="tag">Educated</span><span class="tag">Family-oriented</span><span class="tag">Vegetarian</span></div></div></article>
+      <article class="profile"><div class="profile-photo">♡</div><div class="profile-body"><h3>Profile B</h3><p>Professional • Bengaluru</p><div class="tags"><span class="tag">Career-focused</span><span class="tag">Warm family</span><span class="tag">Travel</span></div></div></article>
+      <article class="profile"><div class="profile-photo">✦</div><div class="profile-body"><h3>Profile C</h3><p>Business • Telangana</p><div class="tags"><span class="tag">Traditional values</span><span class="tag">Ambitious</span><span class="tag">Family-minded</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta-box">
+    <div><h2>Ready to begin your search?</h2><p>Register your profile and let us understand the kind of relationship and family connection you are looking for.</p></div>
+    <a class="hero-btn" href="#contact">Register Now</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact">
+    <div class="contact-info">
+      <div class="eyebrow">Get in touch</div>
+      <h3>Let's start with a conversation.</h3>
+      <p>Complete the form and your bureau team can contact you to discuss your requirements.</p>
+      <div class="info-row"><strong>Phone / WhatsApp:</strong> <a href="tel:+919515613530">+91 9515613530</a></div>
+      <div class="info-row"><strong>WhatsApp:</strong> +91 9515613530</div>
+      <div class="info-row"><strong>Email:</strong> <a href="mailto:padmashali.knots@gmail.com">padmashali.knots@gmail.com</a></div>
+      <div class="info-row"><strong>Address:</strong> Near Saibaba Temple, Raghavendra Nagar, Nacharam, HYD - 500076</div>
+    </div>
+    <form id="profileForm">
+      <div class="form-grid">
+        <div><label for="name">Full Name</label><input id="name" required placeholder="Your name"></div>
+        <div><label for="phone">Phone Number</label><input id="phone" required placeholder="+91 ..."></div>
+        <div><label for="age">Age</label><input id="age" type="number" min="18" required placeholder="Age"></div>
+        <div><label for="city">City</label><input id="city" required placeholder="City"></div>
+        <div><label for="looking">Looking for</label><select id="looking"><option>Marriage profile</option><option>Family consultation</option><option>General enquiry</option></select></div>
+        <div><label for="contactMethod">Preferred contact</label><select id="contactMethod"><option>Phone</option><option>WhatsApp</option><option>Email</option></select></div>
+        <div class="full"><label for="message">About you / requirements</label><textarea id="message" placeholder="Tell us a little about your expectations..."></textarea></div>
+      </div>
+      <button class="submit" type="submit">Submit Enquiry</button>
+      <div class="form-message" id="formMessage">Thank you! Your enquiry has been captured on this demo website. Connect the form to your email/CRM before publishing.</div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© 2026 Padmashali Professional Matrimony. All rights reserved.</span>
+    <span>Privacy • Terms • Matrimonial Services</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('profileForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('formMessage').style.display='block';
+    this.querySelector('.submit').textContent='Enquiry Submitted';
+  });
+</script>
+</body>
+</html>
