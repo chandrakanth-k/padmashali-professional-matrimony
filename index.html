@@ -185,13 +185,25 @@
     </div>
     <form id="profileForm">
       <div class="form-grid">
-        <div><label for="name">Full Name</label><input id="name" required placeholder="Your name"></div>
-        <div><label for="phone">Phone Number</label><input id="phone" required placeholder="+91 ..."></div>
-        <div><label for="age">Age</label><input id="age" type="number" min="18" required placeholder="Age"></div>
-        <div><label for="city">City</label><input id="city" required placeholder="City"></div>
-        <div><label for="looking">Looking for</label><select id="looking"><option>Marriage profile</option><option>Family consultation</option><option>General enquiry</option></select></div>
-        <div><label for="contactMethod">Preferred contact</label><select id="contactMethod"><option>Phone</option><option>WhatsApp</option><option>Email</option></select></div>
-        <div class="full"><label for="message">About you / requirements</label><textarea id="message" placeholder="Tell us a little about your expectations..."></textarea></div>
+        <div><label for="name">Full Name</label><input id="name" name="name" required placeholder="Your name"></div>
+        <div><label for="gender">Gender</label><select id="gender" name="gender" required><option value="">Select</option><option>Male</option><option>Female</option></select></div>
+        <div><label for="dob">Date of Birth</label><input id="dob" name="dob" type="date" required></div>
+        <div><label for="tob">Time of Birth</label><input id="tob" name="tob" type="time" required></div>
+        <div><label for="pob">Place of Birth</label><input id="pob" name="pob" required placeholder="Town / City"></div>
+        <div><label for="height">Height</label><input id="height" name="height" placeholder="e.g. 5'6&quot;"></div>
+        <div><label for="education">Education</label><input id="education" name="education" placeholder="Highest qualification"></div>
+        <div><label for="profession">Profession / Job</label><input id="profession" name="profession" placeholder="Profession"></div>
+        <div><label for="company">Company / Organization</label><input id="company" name="company" placeholder="Company name"></div>
+        <div><label for="income">Annual Income</label><input id="income" name="income" placeholder="Optional"></div>
+        <div><label for="city">Current City</label><input id="city" name="city" required placeholder="City"></div>
+        <div><label for="maritalStatus">Marital Status</label><select id="maritalStatus" name="maritalStatus"><option>Never Married</option><option>Divorced</option><option>Widowed</option></select></div>
+        <div><label for="caste">Caste / Sub-caste</label><input id="caste" name="caste" placeholder="Optional"></div>
+        <div><label for="gotram">Gotram</label><input id="gotram" name="gotram" placeholder="Optional"></div>
+        <div><label for="phone">Phone Number</label><input id="phone" name="phone" required type="tel" placeholder="+91 ..."></div>
+        <div><label for="email">Email Address</label><input id="email" name="email" type="email" placeholder="you@example.com"></div>
+        <div><label for="looking">Looking for</label><select id="looking" name="looking"><option>Marriage profile</option><option>Family consultation</option><option>General enquiry</option></select></div>
+        <div><label for="contactMethod">Preferred contact</label><select id="contactMethod" name="contactMethod"><option>Phone</option><option>WhatsApp</option><option>Email</option></select></div>
+        <div class="full"><label for="message">About You / Partner Preferences</label><textarea id="message" name="message" placeholder="Tell us about yourself, family background, expectations and partner preferences..."></textarea></div>
       </div>
       <button class="submit" type="submit">Submit Enquiry</button>
       <div class="form-message" id="formMessage">Thank you! Your enquiry has been captured on this demo website. Connect the form to your email/CRM before publishing.</div>
@@ -210,8 +222,35 @@
 <script>
   document.getElementById('profileForm').addEventListener('submit', function(e){
     e.preventDefault();
+    const f = this;
+    const get = id => document.getElementById(id).value.trim();
+    const text = [
+      "New Matrimony Registration",
+      "Name: " + get("name"),
+      "Gender: " + get("gender"),
+      "Date of Birth: " + get("dob"),
+      "Time of Birth: " + get("tob"),
+      "Place of Birth: " + get("pob"),
+      "Height: " + get("height"),
+      "Education: " + get("education"),
+      "Profession: " + get("profession"),
+      "Company: " + get("company"),
+      "Annual Income: " + get("income"),
+      "Current City: " + get("city"),
+      "Marital Status: " + get("maritalStatus"),
+      "Caste / Sub-caste: " + get("caste"),
+      "Gotram: " + get("gotram"),
+      "Phone: " + get("phone"),
+      "Email: " + get("email"),
+      "Looking for: " + get("looking"),
+      "Preferred contact: " + get("contactMethod"),
+      "About / Preferences: " + get("message")
+    ].join("\n");
+    const url = "https://wa.me/919515613530?text=" + encodeURIComponent(text);
+    document.getElementById('formMessage').textContent = "Your registration details are ready. WhatsApp will open so you can send them to Padmashali Professional Matrimony.";
     document.getElementById('formMessage').style.display='block';
-    this.querySelector('.submit').textContent='Enquiry Submitted';
+    window.open(url, "_blank");
+    f.querySelector('.submit').textContent='Send via WhatsApp';
   });
 </script>
 </body>
